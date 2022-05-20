@@ -1,5 +1,15 @@
-#include<stdio.h>
-int main() 
+# include <stdio.h>
+# include <string.h>
+
+/**
+ * main - main
+ *
+ * sizeof - gets size in bytes of type
+ *
+ * Return: Always 0 (Success)
+ */
+
+int main(void)
 {
 	/*/ sizeof evaluates the size of a variable */
 	printf("Size of char: %ld bytes/n", sizeof(char));
