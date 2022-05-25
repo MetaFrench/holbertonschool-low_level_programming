@@ -1,5 +1,5 @@
 #include "main.h"
-/** 
+/**
  * jack_bauer - Task 8
  *
  * Return: Always 0
