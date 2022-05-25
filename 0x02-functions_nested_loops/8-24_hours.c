@@ -1,5 +1,9 @@
 #include "main.h"
-
+/** 
+ * jack_bauer - Task 8
+ *
+ * Return: Always 0
+ */
 void jack_bauer(void)
 {
 	int h;
