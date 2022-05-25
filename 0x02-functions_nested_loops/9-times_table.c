@@ -3,7 +3,7 @@
  *times_table - Task 9
  *
  *@n:
-Return:
+Return: n 
  */
 void times_table(void)
 {
