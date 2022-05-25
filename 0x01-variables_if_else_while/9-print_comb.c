@@ -20,4 +20,4 @@ int man(void)
 	}
 	putchar('\n');
 	return (0);
-}
+}	
