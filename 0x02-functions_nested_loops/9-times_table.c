@@ -2,7 +2,6 @@
 /**
  *times_table - Task 9
  *
- *@n:
  *
  */
 void times_table(void)
