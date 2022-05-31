@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
-* print_remaining_days - prints leap year soultion 
+* print_remaining_days - prints leap year soultion
 *
 * @month: month
 * @day: day of month
