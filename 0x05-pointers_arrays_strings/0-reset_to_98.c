@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * reset_to_98 - comment 
+ * reset_to_98 - comment
  * @n: integer
  *
  * Return: 98
