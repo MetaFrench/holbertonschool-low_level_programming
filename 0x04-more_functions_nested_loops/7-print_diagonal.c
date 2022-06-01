@@ -5,7 +5,7 @@
  *
  * @n: integer, number of times repeated
  *
- * Return: Always 0 
+ * Return: Always 0
  */
 void print_diagonal(int n)
 {
