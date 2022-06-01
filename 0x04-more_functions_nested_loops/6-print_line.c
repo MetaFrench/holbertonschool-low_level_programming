@@ -3,7 +3,7 @@
 /**
  * print_line - prints n underscore characters
  *
- * @n: integer
+ * @n: integer, times repeated
  *
  * Return: Always 0 
  */
