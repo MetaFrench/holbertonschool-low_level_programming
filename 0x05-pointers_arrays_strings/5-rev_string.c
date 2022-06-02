@@ -2,9 +2,9 @@
 
 /**
  * rev_string - reverses a string
- * 
+ *
  * @s: string to be reversed
- * 
+ *
  * Return: void (Success)
  */
 
