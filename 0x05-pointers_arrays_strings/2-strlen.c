@@ -4,7 +4,7 @@
  * _strlen - gives the length of a string
  *
  * @s: this is the given string to count
- * 
+ *
  * Return: length of string
  */
 
