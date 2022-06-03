@@ -18,11 +18,11 @@ void print_square(int size)
 		{
 			for (width = 1; width <= size; width++)
 			{
-					_putchar(35);
-				}
-				_putchar(10);
+				_putchar(35);
 			}
-		}
-		else
 			_putchar(10);
+		}
 	}
+	else
+		_putchar(10);
+}
