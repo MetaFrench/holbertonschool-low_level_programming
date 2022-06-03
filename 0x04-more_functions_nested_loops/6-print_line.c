@@ -1,21 +1,21 @@
 #include "main.h"
 
 /**
- * print_line - prints n underscore characters
+ * print_line - print "_"  * n times.
  *
- * @n: integer, times repeated
- *
- * Return: Always 0 
+ * @n: number of times to print "_".
  */
+
 void print_line(int n)
 {
-	if (n > 0)
+	int i;
+
+	i = 0;
+	while (n > 0 && i < n)
 	{
-		while (n > 0)
-		{
-			_putchar(95);
-			n--;
-		}
+		_putchar(95);
+
+		i++;
 	}
-	_putchar(10);
+	_putchar('\n');
 }
