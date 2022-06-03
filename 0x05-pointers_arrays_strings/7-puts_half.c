@@ -1,10 +1,12 @@
 #include "main.h"
 
 /**
-  * puts_half - prints the back half of string
-  *
-  * Return: void (success)
-  */
+ * puts_half - prints the back half of string
+ *
+ * @v: int 
+ * 
+ * Return: void (success)
+ */
 
 void puts_half(char *str)
 {
