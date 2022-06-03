@@ -5,7 +5,7 @@
  * print_array - prints array of integers
  *
  * @a: array
- * @n: elements to print
+ * @v: elements to print
  *
  * Return: Always 0
  */
