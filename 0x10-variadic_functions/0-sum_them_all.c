@@ -2,7 +2,7 @@
 #include "variadic_functions.h"
 
 /**
- * sum_them_all - Sum of all the parameters.
+ * sum_them_all - Sum of parameters.
  * @n: Count of parameters.
  * Return: integer.
  **/
