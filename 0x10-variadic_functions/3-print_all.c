@@ -1,78 +1,47 @@
 #include "variadic_functions.h"
-#include <stdio.h>
-#include <stdarg.h>
 
 /**
- * print_c - Print a char.
- * @c: Char to be printed.
- **/
-void print_c(va_list c)
-{
-	printf("%c", va_arg(c, int));
-}
-/**
- * print_i - Print an int.
- * @i: integer to be printed.
- **/
-void print_i(va_list i)
-{
-	printf("%d", va_arg(i, int));
-}
-/**
- * print_f - Print a float.
- * @f: Float to be printed.
- **/
-void print_f(va_list f)
-{
-	printf("%f", va_arg(f, double));
-}
-/**
- * print_s - Print a string.
- * @s: String to be printed.
- **/
-void print_s(va_list s)
-{
-	char *str = va_arg(s, char *);
-
-	if (str == NULL)
-		str = "(nil)";
-	printf("%s", str);
-}
-
-/**
- * print_all - Print any type of arguments.
- * @format: A list of types of arguments.
- **/
-
+ * print_all - function that prints anything
+ * @format: list of type arguments passed to the function
+ */
 void print_all(const char * const format, ...)
 {
-	format_t s[] = {
-		{'c', print_c},
-		{'i', print_i},
-		{'f', print_f},
-		{'s', print_s},
-		{'\0', '\0'}
-	};
-	unsigned int i = 0, j;
-	char *separator = "";
-	va_list args;
+	va_list ap, check;
+	char cin, *sin, *seg = ", ";
+	int iin, x = 0;
+	double fin;
 
-	va_start(args, format);
-	while (format && format[i])
+	va_start(ap, format);
+	va_start(check, format);
+
+	while (format != NULL && format[x] != '\0')
 	{
-		j = 0;
-		while (s[j].form != '\0')
+		if (format[x + 1] == '\0')
+			seg = "";
+		switch (format[x])
 		{
-			if (s[j].form == format[i])
-			{
-				printf("%s", separator);
-				s[j].f(args);
-				separator = ", ";
+			case 'c':
+				cin = va_arg(ap, int);
+				printf("%c%s", cin, seg);
 				break;
-			}
-			j++;
+			case 'i':
+				iin = va_arg(ap, int);
+				printf("%d%s", iin, seg);
+				break;
+			case 'f':
+				fin = va_arg(ap, double);
+				printf("%f%s", fin, seg);
+				break;
+			case 's':
+				sin = va_arg(ap, char *);
+				if (sin == NULL)
+					sin = "(nil)";
+				printf("%s%s", sin, seg);
+				break;
+			default:
+				break;
 		}
-		i++;
+		x++;
 	}
 	printf("\n");
 }
