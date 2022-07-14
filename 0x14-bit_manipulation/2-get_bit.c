@@ -1,23 +1,31 @@
 #include "main.h"
 
 /**
- * get_bit - Target the bit of a number at the index position.
- * @n: Given number.
- * @index: Given index.
- * Return: Positive number if success (0,1) or -1 if it fails.
- **/
-
+ * get_bit - returns the value of a bit at a given index
+ * @n: number to find
+ * @index: the index you wish to calculate
+ * Return: value of bit at index or `-1` if an error occurs
+ */
 int get_bit(unsigned long int n, unsigned int index)
 {
 	unsigned int i = 0;
 
-	for (; i < index && (n != 1 || n != 0); i++)
+	if (n <= 1)
+		return (n % 2);
+
+	while (n >= 1)
 	{
-		n >>=  1;
-		if (n == 0 && i)
-			return (-1);
+		if (i >= index)
+			break;
+		n /= 2;
+		i++;
 	}
-	if (i == index)
-		n %= 2;
-	return (n);
+
+	if (index > i && index < sizeof(long int) * 8)
+		return (0);
+
+	if (index > sizeof(long int) * 8)
+		return (-1);
+
+	return (n % 2);
 }
