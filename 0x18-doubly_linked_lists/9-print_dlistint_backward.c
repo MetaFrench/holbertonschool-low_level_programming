@@ -1,7 +1,8 @@
 #include "lists.h"
+#include <stdio.h>
 
 /**
- * print_dlistint_backward - prints all elements of a dlistint_t list backward
+ * print_dlistint_backward - prints all elements backwards
  * @h: list to print
  * Return: number of nodes
  */
