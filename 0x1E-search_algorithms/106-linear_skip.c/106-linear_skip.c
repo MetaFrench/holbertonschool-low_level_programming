@@ -1,5 +1,11 @@
 #include "search_algos.h"
 
+/*
+ *
+ * Linear Skip
+ *
+ * /
+
 skiplist_t *linear_skip(skiplist_t *list, int value)
 {
 	skiplist_t *node, *jump;
